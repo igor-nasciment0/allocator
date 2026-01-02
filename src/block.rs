@@ -15,12 +15,4 @@ impl BlockHeader {
             next: null_mut(),
         }
     }
-
-    pub fn as_ptr(&self) -> *const BlockHeader {
-        self as *const BlockHeader
-    }
-
-    pub fn as_mut_ptr(&mut self) -> *mut BlockHeader {
-        self as *mut BlockHeader
-    }
 }
